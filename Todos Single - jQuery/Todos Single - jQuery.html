@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todos Single - jQuery</title>
+    <link rel="stylesheet" href="./Todos Single - jQuery.css">
+    <script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery/jquery-1.8.0.js"></script>
+</head>
+<body>
+    <div class="todos-container">
+        <h1 class="todos-title">极客 <span class="title-en">todos</span></h1>
+        <div class="todos-content">
+            <div class="todos-input-cell">
+                <div class="todos-arrow"></div>
+                <input class="todos-input" id="todo-input" type="text" name="todo-input" placeholder="需要做什么？">
+            </div>
+            <div class="todos-show">
+                <div class="todos-list" id="todos-list">
+                    <div class="todo-item">
+                        <div class="todo-item-hd"></div>
+                        <div class="todo-item-bd">跑步</div>
+                        <div class="todo-item-ft">✖</div>
+                    </div>
+                    <div class="todo-item">
+                        <div class="todo-item-hd"></div>
+                        <div class="todo-item-bd">游泳</div>
+                        <div class="todo-item-ft">✖</div>
+                    </div>
+                    <div class="todo-item active">
+                        <div class="todo-item-hd"></div>
+                        <div class="todo-item-bd">背单词</div>
+                        <div class="todo-item-ft">✖</div>
+                    </div>
+                </div>
+                <div class="todos-filter" id="todos-filter">
+                    <div class="filter-hd"><span class="filter-num">1</span>个项目</div>
+                    <div class="filter-bd">
+                        <div class="filter-item active">全部</div>
+                        <div class="filter-item">待办</div>
+                        <div class="filter-item">已办</div>
+                    </div>
+                    <div class="filter-ft">删除已完成</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./Todos Single - jQuery.js"></script>
+</body>
+</html>
