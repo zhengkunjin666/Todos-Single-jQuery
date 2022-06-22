@@ -106,24 +106,13 @@ const PAGE={
     },
     removeFinish: function(){
         let todos=PAGE.data.todos;
-        for(i=0;i<=todos.length;i++){
-            console.log(todos[i].completed)
-            console.log(i)
-            if(todos[i].completed){
-                todos.splice(i--,1);
-                console.log(i)
-            }
-        };
-        // todos.forEach(function(todo,index,todos){
-        //     console.log(todo.completed)
-        //     console.log(index)
-        //     if(todo.completed){
-        //         todos.splice(index,1);
-        //         console.log(index)
-        //         index--;
-        //         console.log(index)
+        let showTodos=todos.filter(data => !data.completed);
+        PAGE.data.todos=showTodos;
+        // for(i=0;i<todos.length;i++){
+        //     if(todos[i].completed){
+        //         todos.splice(i--,1);
         //     }
-        // });
+        // };
         PAGE.render();
     },
     saveTodos: function(){
